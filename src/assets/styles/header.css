@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #343a40; /* Couleur de fond de l'en-tête */
+  color: white; /* Couleur du texte dans l'en-tête */
+  padding: 10px 20px; /* Padding à l'intérieur de l'en-tête */
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+  align-items: center; /* Alignement vertical des éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  min-height: 60px;
+}
+
+.header-links {
+  display: none;
+}
+
+@media screen and (min-width: 672px) {
+  .header-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+  }
+}
